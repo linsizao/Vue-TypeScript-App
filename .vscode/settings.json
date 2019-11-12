@@ -1,0 +1,21 @@
+{
+  "window.zoomLevel": 0,
+  "terminal.integrated.rendererType": "dom",
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "eslint.lintTask.enable": true,
+}
