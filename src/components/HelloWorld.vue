@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { Banks } from "@/api";
 
 // 在这里对数据进行类型约束
 export interface Post {
@@ -23,6 +24,11 @@ export default class HelloWorld extends Vue {
 
   get date() {
     return `${this.post.datePosted.getDate()}/${this.post.datePosted.getMonth()}/${this.post.datePosted.getFullYear()}`;
+  }
+
+  private created() {
+    const query = {};
+    Banks(query);
   }
 }
 </script>
